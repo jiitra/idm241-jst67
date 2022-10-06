@@ -1,0 +1,178 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.overlay-slidedown {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(231, 231, 231);
+}
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.overlay ul li a {
+  font-size: 54px;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.overlay .overlay-close {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  overflow: hidden;
+  border: none;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+.overlay-slidedown.open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+.burger {
+  height: 3em;
+  width: 3em;
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-tap-highlight-color: transparent;
+}
+.burger .burger-lines:after {
+  left: 0;
+  top: -1em;
+}
+.burger .burger-lines:before {
+  left: 1em;
+  top: 1em;
+}
+.burger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  top: -25%;
+  left: -25%;
+}
+.burger .burger-lines {
+  top: 50%;
+  margin-top: -0.125em;
+}
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before {
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 100%;
+  border-radius: 0.25em;
+  background-color: rgb(204, 78, 78);
+  height: 0.25em;
+  position: absolute;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.burger .burger-lines:after {
+  left: 0;
+  top: -1em;
+}
+.burger .burger-lines:before {
+  left: 1em;
+  top: 1em;
+}
+.burger.burger-squeeze .burger-lines,
+.burger.burger-squeeze .burger-lines:after,
+.burger.burger-squeeze .burger-lines:before {
+  -webkit-transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+    0.4s background-color 0.2s;
+  -o-transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+    0.4s background-color 0.2s;
+  transition: 0.2s top 0.2s, 0.1s left, 0.2s transform,
+    0.4s background-color 0.2s;
+}
+
+.burger.burger-squeeze .burger-lines:after,
+.burger.burger-squeeze .burger-lines:before {
+  width: 2em;
+}
+
+.burger.burger-squeeze.open .burger-lines,
+.burger.burger-squeeze.open .burger-lines:after,
+.burger.burger-squeeze.open .burger-lines:before {
+  -webkit-transition: 0.2s background-color, 0.2s top, 0.2s left,
+    0.2s transform 0.15s;
+  -o-transition: 0.2s background-color, 0.2s top, 0.2s left,
+    0.2s transform 0.15s;
+  transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform 0.15s;
+}
+
+.burger.burger-squeeze.open .burger-lines {
+  background-color: transparent;
+}
+
+.burger.burger-squeeze.open .burger-lines:before,
+.burger.burger-squeeze.open .burger-lines:after {
+  left: 0.5em;
+  top: 0px;
+}
+
+.burger.burger-squeeze.open .burger-lines:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.burger.burger-squeeze.open .burger-lines:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
