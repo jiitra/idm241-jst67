@@ -1,19 +1,19 @@
-body{
+body {
   background-image: url(../bg.svg);
   background-size: cover;
-  background-color:rgb(228, 226, 224);
+  background-color: rgb(228, 226, 224);
   width: 100%;
   color: #212651;
   font-family: sans-serif;
-  height: 1000px;
+  height: 1100px;
 }
 
-h1{
+h1 {
   color: #3188ff;
   font-size: 3rem;
 }
 
-#container{
+#container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -21,39 +21,38 @@ h1{
   padding-top: 2rem;
 }
 
-#text__container{
+#text__container {
   padding-top: 5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
 }
 
-.col{
+.col {
   max-width: 20rem;
   padding: 0 3rem;
 }
 
-.col li{
+.col li {
   padding-bottom: 1rem;
 }
 
-.images{
-  display:flex;
+.images {
+  display: flex;
   flex-direction: row;
   margin: auto;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-@media screen and (max-width: 660px){
-  .col{
-      padding: 0;
+@media screen and (max-width: 660px) {
+  .col {
+    padding: 0;
   }
-  
 }
 
-#menu{
+#menu {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -61,24 +60,24 @@ h1{
   justify-content: center;
 }
 
-.menu-item{
+.menu-item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 800;
 }
 
-.menu-item a{
- display: inline-block;
-  color:#212651;
+.menu-item a {
+  display: inline-block;
+  color: #212651;
   text-decoration: none;
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
 }
-.menu-item a:hover{
+.menu-item a:hover {
   display: inline-block;
   cursor: pointer;
   transform: scale(1.2);
-  color:#3188ff;
+  color: #3188ff;
 }
 
 .overlay-slidedown {
@@ -140,21 +139,33 @@ h1{
   transition: transform 0.4s ease-in-out;
 }
 
-.overlay-slidedown.open ul{
+.overlay-slidedown.open ul {
   -webkit-animation: 0.9s ease 0s normal forwards 1 fadein;
   animation: 0.9s ease 0s normal forwards 1 fadein;
 }
 
-@keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .burger {
@@ -164,10 +175,10 @@ h1{
   font-size: 12px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.burger:hover{
+.burger:hover {
   transform: scale(1.1);
 }
 
@@ -196,28 +207,27 @@ h1{
   background-color: #212651;
   height: 0.25em;
   position: absolute;
-  -webkit-transition: color 2s  ease-in-out;
+  -webkit-transition: color 2s ease-in-out;
   transition: color 2s ease-in-out;
 }
 
 /* hover state for lines and X */
 .burger:hover .burger-lines,
 .burger:hover .burger-lines:after,
-.burger:hover .burger-lines:before{
-  background-color:#3188ff;
+.burger:hover .burger-lines:before {
+  background-color: #3188ff;
 }
 
 .burger.burger-squeeze .burger-lines:after,
 .burger.burger-squeeze .burger-lines:before {
   width: 2em;
- 
 }
 
 .burger.burger-squeeze.open .burger-lines {
   background-color: transparent;
 }
 
-.fa:hover{
+.fa:hover {
   color: #890a0a;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -225,15 +235,43 @@ h1{
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 832px) {
+  body {
+    height: 1600px;
+  }
 }
