@@ -20,28 +20,58 @@
 
         <div id="text__container">
           <div class="col">
-            <h2>Trigger</h2>
+            <h2>Triggers</h2>
             <ul>
-              <li>Click menu item (about, resume, or contact).</li>
+              <li>Hover on/off menu icon</li>
+              <li>Click menu icon</li>
+              <li>Hover on/off menu items</li>
+              <li>Click menu item</li>
+              <li>Hover on/off "X" button</li>
+              <li>Click "X" button</li>
             </ul>
+
             <h2>Rules</h2>
             <ul>
               <li>
-                On click, a line appears underneath the item from left to right.
+                On <strong>clickable item hover</strong>, cursor changes to
+                pointer and item scales up in size by 10%
               </li>
-              <li>On click, the menu background color changes.</li>
-              <li>After 1 second delay, new page loads.</li>
+              <li>
+                Off <strong>clickable item hover</strong>, cursor-pointer
+                changes to default cursor and item scales down in size by 10%
+              </li>
+              <li>
+                On <strong>menu icon and menu item hover</strong>, color changes
+                to blue
+              </li>
+              <li>
+                Off <strong>menu icon and menu item hover</strong>, color
+                changes to black
+              </li>
+              <li>
+                On <strong>"X" button hover</strong>, color changes to red and
+                icon shakes
+              </li>
+              <li>
+                Off <strong>"X" button hover</strong>, color changes to black
+                and icon stops shaking
+              </li>
+              <li>
+                On <strong>menu icon click</strong>, background color fills page
+                from top to bottom
+              </li>
+              <li>
+                On <strong>menu item click</strong>, a line appears underneath
+                the item from left to right and background color changes. After
+                1 second delay, new page loads
+              </li>
+              <li>
+                On <strong>"X" icon click</strong>, menu slides out from bottom
+                to top
+              </li>
             </ul>
           </div>
           <div class="col">
-            <h2>Feedback</h2>
-            <ul>
-              <li>
-                On click, a line appears underneath the item from left to right.
-              </li>
-              <li>On click, the menu background color changes.</li>
-              <li>After 1 second delay, new page loads.</li>
-            </ul>
             <h2>Loops/modes</h2>
             <ul>
               <li>
@@ -49,10 +79,71 @@
                 associated background color is visible.
               </li>
             </ul>
+
+            <h2>Feedback</h2>
+            <ul>
+              <li>
+                On <strong>clickable item hover</strong>, cursor changes to
+                pointer and item scales up in size by 10%
+              </li>
+              <li>
+                Off <strong>clickable item hover</strong>, cursor-pointer
+                changes to default cursor and item scales down in size by 10%
+              </li>
+              <li>
+                On <strong>menu icon and menu item hover</strong>, color changes
+                to blue
+              </li>
+              <li>
+                Off <strong>menu icon and menu item hover</strong>, color
+                changes to black
+              </li>
+              <li>
+                On <strong>"X" button hover</strong>, color changes to red and
+                icon shakes
+              </li>
+              <li>
+                Off <strong>"X" button hover</strong>, color changes to black
+                and icon stops shaking
+              </li>
+              <li>
+                On <strong>menu icon click</strong>, background color fills page
+                from top to bottom
+              </li>
+              <li>
+                On <strong>menu item click</strong>, a line appears underneath
+                the item from left to right and background color changes. After
+                1 second delay, new page loads
+              </li>
+              <li>
+                On <strong>"X" icon click</strong>, menu slides out from bottom
+                to top
+              </li>
+            </ul>
           </div>
         </div>
 
         <h1>Microinteraction Visualization</h1>
+
+        <div class="images">
+          <img src="menu-1.png" />
+          <img src="menu-hover.png" />
+        </div>
+        <div class="images">
+          <style>
+            .bigger{width:50%}
+          </style>
+          <img class="bigger" src="menu.png" />
+        </div>
+        <div class="images">
+          <img src="x-button.png" />
+          <img src="x-button-hover.png" />
+          <img src="x-button-hover2.png" />
+        </div>
+        <div class="images">
+          <img class="big" src="about-item.png" />
+          <img class="big" src="about-hover.png" />
+        </div>
 
         <div class="images">
           <img class="big" src="img-1.png" />
