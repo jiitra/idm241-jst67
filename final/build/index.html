@@ -29,73 +29,118 @@
           </div>
 
           <ul id="menu">
-            <li class="menu-item" id="about"><a href="javascript:delay('')">about</a></li>
-            <li class="menu-item" id="resume"><a href="javascript:delay('')">resume</a></li>
-            <li class="menu-item" id="contact"><a href="javascript:delay('')">contact</a></li>
+            <li class="menu-item" id="about"><a class = "menu-item-a underline" href="javascript:delay('')">about</a></li>
+            <li class="menu-item" id="resume"><a class = "menu-item-a underline" href="javascript:delay('')">resume</a></li>
+            <li class="menu-item" id="contact"><a class = "menu-item-a underline" href="javascript:delay('')">contact</a></li>
           </ul>
         </div>
 
         <div id="text__container">
           <div class="col">
-            <h2>Trigger</h2>
+            <h2>Triggers</h2>
             <ul>
-              <li>Hover over hamburger menu lines</li>
-              <li>Hover over menu items</li>
-              <li>Hover over menu X icon</li>
+              <li>Hover on/off menu icon</li>
+              <li>Click menu icon</li>
+              <li>Hover on/off menu items</li>
+              <li>Click menu item</li>
+              <li>Hover on/off "X" button</li>
+              <li>Click "X" button</li>
             </ul>
+
             <h2>Rules</h2>
             <ul>
-              <li>On hamburger menu hover, cursor changes to pointer</li>
-              <li>On menu item hover, cursor changes to pointer</li>
-              <li>On X hover, cursor changes to pointer</li>
               <li>
-                On hover on clickable item (hamburger menu lines, menu items,
-                and menu close "X" symbol), item scales up in size by 10%
+                On <strong>clickable item hover</strong>, cursor changes to
+                pointer and item scales up in size by 10%
               </li>
               <li>
-                On hover on hamburger menu lines and menu items, color changes
+                Off <strong>clickable item hover</strong>, cursor-pointer
+                changes to default cursor and item scales down in size by 10%
+              </li>
+              <li>
+                On <strong>menu icon and menu item hover</strong>, color changes
                 to blue
               </li>
               <li>
-                On hover on "X" symbol, color changes to red and item shakes
+                Off <strong>menu icon and menu item hover</strong>, color
+                changes to black
               </li>
               <li>
-                Off hover of clickable menu item, item scales down in size by
-                10% and color changes back to default black
+                On <strong>"X" button hover</strong>, color changes to red and
+                icon shakes
               </li>
               <li>
-                Off hover of "X" symbol, item stops shaking
+                Off <strong>"X" button hover</strong>, color changes to black
+                and icon stops shaking
+              </li>
+              <li>
+                On <strong>menu icon click</strong>, background color fills page
+                from top to bottom
+              </li>
+              <li>
+                On <strong>menu item click</strong>, a line appears underneath
+                the item and background color changes. After
+                1 second delay, new page loads
+              </li>
+              <li>
+                On <strong>"X" icon click</strong>, menu slides out from bottom
+                to top
               </li>
             </ul>
           </div>
           <div class="col">
+            <h2>Loops/modes</h2>
+            <ul>
+              <li>
+                Mode: If page is active, the menu item is underlined and the
+                associated background color is visible.
+              </li>
+            </ul>
+
             <h2>Feedback</h2>
             <ul>
-              <li>On hover of clickable item, cursor changes to pointer</li>
               <li>
-                On hover of clickable item (hamburger menu lines, menu items,
-                and menu close "X" symbol), item scales up in size by 10%
+                On <strong>clickable item hover</strong>, cursor changes to
+                pointer and item scales up in size by 10%
               </li>
               <li>
-                On hover of hamburger menu lines and menu items, color changes
+                Off <strong>clickable item hover</strong>, cursor-pointer
+                changes to default cursor and item scales down in size by 10%
+              </li>
+              <li>
+                On <strong>menu icon and menu item hover</strong>, color changes
                 to blue
               </li>
               <li>
-                On hover of "X" symbol, color changes to red and item shakes
+                Off <strong>menu icon and menu item hover</strong>, color
+                changes to black
               </li>
               <li>
-                Off hover of clickable menu item, item scales down in size by
-                10% and color changes back to default black
+                On <strong>"X" button hover</strong>, color changes to red and
+                icon shakes
               </li>
               <li>
-                Off hover of "X" symbol, item stops shaking
+                Off <strong>"X" button hover</strong>, color changes to black
+                and icon stops shaking
               </li>
-            </ul>
-            <h2>Loops/modes</h2>
-            <ul>
-              <li>None</li>
+              <li>
+                On <strong>menu icon click</strong>, background color fills page
+                from top to bottom
+              </li>
+              <li>
+                On <strong>menu item click</strong>, a line appears underneath
+                the item and background color changes. After
+                1 second delay, new page loads
+              </li>
+              <li>
+                On <strong>"X" icon click</strong>, menu slides out from bottom
+                to top
+              </li>
             </ul>
           </div>
+        </div>
+
+
         </div>
       </div>
     </main>

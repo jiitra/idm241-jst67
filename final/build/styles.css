@@ -1,11 +1,9 @@
 body {
-  background-size: cover;
-  background-color: rgb(228, 226, 224);
+  background-color: rgb(239, 239, 239);
   width: 100%;
   color: #212651;
   font-family: sans-serif;
-  height: 1100px;
-  transition: background-color .4s ease;
+  /* transition: background-color .4s ease; */
 }
 
 h1 {
@@ -28,6 +26,27 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+a.active
+{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+a.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #3188ff;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+/* a.underline:hover::before{
+  visibility: visible;
+  width: 100%;
+} */
 
 .col {
   max-width: 20rem;
@@ -94,6 +113,7 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
+  transition: 0.4s ease-in-out;
   background: rgb(231, 231, 231);
 }
 .overlay nav {
